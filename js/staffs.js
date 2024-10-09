@@ -1,9 +1,4 @@
-/**
-* @name: Assignement1
-* @Course Code: SODV1201
-* @class: Software Development Diploma program.
-* @author: Group 2: Josshua Balita, Woraphot Khuanchanthuek
-*/
+
 
 //Staffs Page
 
