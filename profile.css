@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav {
+    padding: 10px 0;
+    color:  black;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    list-style: none;
+    margin-right: 50px;
+    text-align: left;
+    margin-top: 15px;
+}
+nav li {
+    display: inline-block;
+    margin: 20px;
+}
+nav a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    background-color: white;
+}
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    padding: 0 500px;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+.slide {
+    display: none;
+    padding: 20px;
+}
+.slide h1 {
+    color:  white;
+    font-size: 45px;
+}
+.slide.active {
+    display: block;
+}
+.header-background {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.header-background .p-container {
+    color: white;
+    max-width: 40%;
+    position: relative; 
+    left: 800px;
+    text-align: left; /* Align the text to the left side */
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 0 100px 100px; /* Adjust the padding as needed */
+    line-height: 2;
+}
+.content-container {
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+    margin-top: 100px;
+    padding: 0 50px; 
+}
+.content-container h1 {
+    font-size: 35px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: normal;
+}
+.content-container h5 {
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: normal;
+}
+.profile-container {
+    margin: 100px auto;
+    border: 2px solid transparent;
+    box-shadow:  0 0 8px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.profile-photo img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.profile-photo {
+    width: 100%;
+    text-align: center;
+}
+.profile-information {
+    line-height: 1.5;
+}
+footer {
+    background-color:black;
+    padding: 20px;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-top: auto;
+}
+#staff-list {
+    margin: 30px;
+}
+table {
+    width: 100%;
+}
+th,td {
+    padding: 20px;
+    border: 1px solid bisque;
+    text-align: left;
+}
+th {
+    background-color: olive;
+}
+tr:nth-child(even) {
+    background-color: bisque;
+}
+tr:hover {
+    background-color: black;
+    color: whitesmoke;
+    transition: background-color 0.4s, color 0.4s;
+}
+label, select {
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+.container {
+    display: flex;
+    margin-bottom: 250px;
+}
+.grade-converter {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid black;
+}
+.grade-converter input, span {
+    font-size: 20px;
+    margin: 30px;
+}
+.grade-converter button {
+    background-color: olive;
+    color: whitesmoke;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: background-color 0.4s;
+    float: right;
+}
+.grade-converter button:hover {
+    background-color: black;
+}
+.record-list {
+    flex: 1;
+    padding: 20px;
+}
+.record-list li {
+    font-size: 20px;
+    border-bottom: 1px dashed black;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.container h1,h2 {
+    font-size: 35px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: normal;
+    text-align: center;
+    margin-top: 100px;
+}
+.container p {
+    margin: 50px;
+    font-size: 25px;
+}
+.container ul {
+    padding-left: 20px;
+}
+.validation-message {
+    color: red;
+}
+.temp-container {
+    margin: 50px 100px 260px;
+    border: 2px solid olive;
+    padding: 50px;
+    box-shadow:  0 0 8px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+.h1-temp {
+    font-size: 35px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: normal;
+    text-align: center;
+    margin-top: 50px;
+}
+.temp-container label,
+.select-container label {
+    margin-right: 10px;
+}
+.temp-container input,
+.select-container select {
+    padding: 5px;
+}
+.select-container {
+    display: flex;
+    align-items: center;
+}
+#result-container {
+    display: flex;
+    justify-content: space-between;
+}
+#result {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.input-container input {
+    font-size: 15px;
+}

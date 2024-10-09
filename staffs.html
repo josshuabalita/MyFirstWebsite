@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Group#2 - Assignment#1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Group 2 Assignment 1">
+        <link rel="stylesheet" href="profile.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+
+    <body>
+        <div class="header-background">
+            <nav>
+                <ul>
+                    <li><a href="profile.html">Home</a></li>
+                    <li><a href="grade.html">Grade</a></li>
+                    <li><a href="staffs.html">Staffs</a></li>
+                    <li><a href="temperature.html">Temperature</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section>
+            <div>
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by">
+                    <option value="name">Name</option>
+                    <option value="salary">Salary</option>
+                    <option value="date">Hire Date</option>
+                </select>
+            </div>
+
+            <div id="staff-list">
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; SODV1201 Assignment#1 -- Group 2. All rights reserved.</p>
+                <p id="current-time"></p>
+            </div>
+        </footer>
+
+        <script src="js/staffs.js"></script>
+    </body>
+</html>

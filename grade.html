@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Group#2 - Assignment#1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Group 2 Assignment 1">
+        <link rel="stylesheet" href="profile.css">
+    </head>
+
+    <body>
+        <div class="header-background">
+            <nav>
+                <ul>
+                    <li><a href="profile.html">Home</a></li>
+                    <li><a href="grade.html">Grade</a></li>
+                    <li><a href="staffs.html">Staffs</a></li>
+                    <li><a href="temperature.html">Temperature</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section>
+            <div class="container">
+                <div class="grade-converter">
+                    <h1>Mark To Grade Converter</h1>
+                    <p>Subject: <input type="text" id="subject" oninput="convertToUppercase()" /></p>
+                    <p>Mark: <input type="text" id="mark" /></p>
+                    <button onclick="convertMark()">Convert</button>
+                    <p class="validation-message"></p>
+                    <p>Grade: <span id="final-grade"></span></p>
+                </div>
+                <div class="record-list">
+                    <h2>Record</h2>
+                    <ul id="user-record"></ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; SODV1201 Assignment#1 -- Group 2. All rights reserved.</p>
+                <p id="current-time"></p>
+            </div>
+        </footer>
+
+
+        <script src="js/grade.js"></script>
+    </body>
+</html>

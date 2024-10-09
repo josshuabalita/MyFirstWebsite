@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Group#2 - Assignment#1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Group 2 Assignment 1">
+        <link rel="stylesheet" href="profile.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+
+    <body>
+        <div class="header-background">
+            <nav>
+                <ul>
+                    <li><a href="profile.html">Home</a></li>
+                    <li><a href="grade.html">Grade</a></li>
+                    <li><a href="staffs.html">Staffs</a></li>
+                    <li><a href="temperature.html">Temperature</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section>
+            <h1 class="h1-temp">Temperature</h1>
+            <div class="temp-container">
+                <div class="input-container">
+                    <label for="temperature">Please Enter Temperature: </label>
+                    <input type="number" id="temperature" step="0.01">
+
+                    <div class="select-container">
+                        <label for="fromUnits">From:</label>
+                        <select id="fromUnit">
+                            <option value="F">Fahrenheit</option>
+                            <option value="C">Celsius</option>
+                            <option value="K">Kelvin</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="result-container">
+                    <div class="result" id="result"></div>
+
+                    <div class="select-container">
+                        <label for="toUnit">To:</label>
+                        <select id="toUnit">
+                            <option value="F">Fahrenheit</option>
+                            <option value="C">Celsius</option>
+                            <option value="K">Kelvin</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="result"></div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; SODV1201 Assignment#1 -- Group 2. All rights reserved.</p>
+                <p id="current-time"></p>
+            </div>
+        </footer>
+
+        <script src="js/temperature.js"></script>
+    </body>
+</html>
